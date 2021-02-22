@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Portfolio page</title>
+		<link rel="icon" href="./images/favicon.png" type="image/png">
+		<link rel="stylesheet" href="./styles/style.css">
+	</head>
+
+	<body class="page">
+		<header class="header page__header">
+			<img class="logo header__logo" src="./images/logo.png" alt="logo.png">
+			<nav class="menu header__menu">
+				<ul class="burger menu__burger">
+					<li class="burger-item burger__item">
+						<a class="burger-item__link" href="#about">About</a>
+					</li>
+					<li class="burger-item burger__item">
+						<a class="burger-item__link" href="#portfolio">Portfolio</a>
+					</li>
+					<li class="burger-item burger__item">
+						<a class="burger-item__link" href="#feedback">Feedback</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="content page__main">
+			<section id="about" class="about content__about">
+				<div class="about-card about__card">
+					<h1 class="about-card__title">Hello! What's up?</h1>
+					<p class="about-card__text">My name is Alexey. I'm frontend developer.</p>
+					<p class="about-card__text">Scroll down to see my works!</p>
+				</div>
+			</section>
+			<section id="portfolio" class="portfolio content__portfolio">
+				<div class="slider portfolio__slider">
+					<button class="slider-arrow slider__left">
+						<img class="slider-arrow__left" src="./images/left-arrow.svg" alt="left-arrow">
+					</button>
+					<button class="slider-arrow slider__right">
+						<img class="slider-arrow__right" src="./images/right-arrow.svg" alt="right-arrow">
+					</button>
+					<div class="slider-track slider__track">
+						<div class="slider-item slider-track__item">
+							<div class="slider-card slider-item__card">
+								<div class="card-content slider-card__content">
+									<h2 class="card-content__title">Landing page.</h2>
+									<p class="card-content__text">Tech: HTML, SCSS, JS.</p>
+									<p class="card-content__text">Method: mobile first.</p>
+									<a class="card-content__link" href="https://ex-god.github.io/landing_page/">Preview, </a>
+									<a class="card-content__link" href="https://github.com/Ex-God/landing_page">Github.</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-item slider-track__item">
+							<div class="slider-card slider-item__card">
+								<div class="card-content slider-card__content">
+									<h2 class="card-content__title">Blog page.</h2>
+									<p class="card-content__text">Tech: HTML, SCSS, Bootstrap, JS, JQuery.</p>
+									<p class="card-content__text">Method: mobile first.</p>
+									<a class="card-content__link" href="https://ex-god.github.io/blog_page/">Preview, </a>
+									<a class="card-content__link" href="https://github.com/Ex-God/blog_page">Github.</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-item slider-track__item">
+							<div class="slider-card slider-item__card">
+								<div class="card-content slider-card__content">
+									<h2 class="card-content__title"> PetPaws.</h2>
+									<p class="card-content__text">Tech: HTML, SCSS, JS, React.</p>
+									<p class="card-content__text">Method: mobile first.</p>
+									<a class="card-content__link" href="https://ex-god.github.io/petpaws/">Preview, </a>
+									<a class="card-content__link" href="https://github.com/Ex-God/petpaws">Github.</a>
+								</div>
+							</div>
+						</div>
+						<div class="slider-item slider-track__item">
+							<div class="slider-card slider-item__card">
+								<div class="card-content slider-card__content">
+									<h2 class="card-content__title"> VetBase.</h2>
+									<p class="card-content__text">Tech: HTML, SCSS, JS.</p>
+									<p class="card-content__text">Method: mobile first.</p>
+									<a class="card-content__link" href="https://ex-god.github.io/vetbase/">Preview, </a>
+									<a class="card-content__link" href="https://github.com/Ex-God/vetbase">Github.</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<section id="feedback" class="feedback content__feedback">
+				<form class="feedback-form feedback__form">
+					<input class="feedback-form__input" name="email" type="email" placeholder=" " required>
+					<label class="feedback-form__label" for="email">Enter your e-mail for feedback:</label>
+					<button class="feedback-form__btn" type="submit">➢</button>
+				</form>
+				<div class="alert feedback__alert">
+					<h2 class="alert__title">Thanks for feedback!</h2>
+					<p class="alert__text">Mail have been sent.</p>
+					<img class="alert__img" src="./images/success.svg" alt="success">
+				</div>
+			</section>
+		</main>
+		
+		<footer class="footer page__footer">
+			<h2 class="footer__title">All rights reserved by Ex-God</h2>
+		</footer>
+		
+		<script src="./scripts/app.js"></script>
+	</body>
+</html>
