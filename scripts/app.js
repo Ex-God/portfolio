@@ -16,7 +16,7 @@ $form.addEventListener('submit', function (event) {
         }, 3000);
     }
 
-    fetch('../scripts/send.php', {
+    fetch('../scripts/mail.js', {
         method: 'POST',
         body: `${JSON.stringify(data)}`
     }).then(showMessage($alert))
